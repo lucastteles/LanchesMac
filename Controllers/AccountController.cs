@@ -30,7 +30,7 @@ namespace LanchesMac.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Login(LoginViewModel loginVM)
+        public async Task<ActionResult> Login(LoginViewModel loginVM)////
         {
             if (!ModelState.IsValid) //se não for valido
                 return View(loginVM); //retorna a pagina de login
@@ -55,7 +55,7 @@ namespace LanchesMac.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(LoginViewModel resgistroVM)
+        public async Task<ActionResult> Register(LoginViewModel resgistroVM)///////
         {
             //Verfica se o ModelState é valido
             if (ModelState.IsValid)
